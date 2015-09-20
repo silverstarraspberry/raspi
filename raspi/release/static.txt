@@ -7,4 +7,5 @@ make static
 sudo make install-staic
 
 2. 必要なライブラリをリンクしてコンパイルします。
-cc *.c -lwiringPi -lstatic -lpthread
+cd /home/pi
+cc tempFan.c -lwiringPi -static -lpthread
