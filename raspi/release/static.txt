@@ -1,0 +1,5 @@
+cd
+cd wiringPi
+make static
+sudo make install-staic
+cc *.c -lwiringPi -lstatic -lpthread

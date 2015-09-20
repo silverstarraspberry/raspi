@@ -82,8 +82,8 @@ int main(int argc, char *argv[])
 	} else {
 		if(idx == 0 || o_port_no == 0 || limit == 0) {
 			fprintf(stderr, "Usage:%s\n",CMDNAME);
-			fprintf(stderr, "      %s --out <port No.> --cpu <limit>\n",CMDNAME);
-			fprintf(stderr, "      %s --out=<port No.> --cpu=<limit>\n",CMDNAME);
+			fprintf(stderr, "      %s --out <port No.> --cpu <temp>\n",CMDNAME);
+			fprintf(stderr, "      %s --out=<port No.> --cpu=<temp>\n",CMDNAME);
 			fprintf(stderr, "  (default:--out 23 --cpu 47000)\n");
 			return 1;
 		}
