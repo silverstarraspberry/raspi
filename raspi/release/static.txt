@@ -1,5 +1,10 @@
-cd
+[スタティックリンクする場合]
+1. wiringPi にスタティックライブラリを追加します
+
+cd /home/pi
 cd wiringPi
 make static
 sudo make install-staic
+
+2. 必要なライブラリをリンクしてコンパイルします。
 cc *.c -lwiringPi -lstatic -lpthread

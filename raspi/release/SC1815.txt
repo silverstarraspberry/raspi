@@ -1,15 +1,18 @@
+[ファンコントロールのraspberry PiのGPIOとトランジスタ結線] 
+
 <Header Pin No.>
 2 = 5V
 6 = GND
 16 = GPIO23(OUTPUT PIN)
 
 <Pin Assign>
-GPIO23---[ 10 k OUM ]--- B
+GPIO23------------------ B
 GND   ------------------ E
 5V    ------ (Fan) ----- C
-
+B:ベース,E:エミッタ,C:コレクタ
 
 <Figure>
+SC1815トランジスタの配線図
 	  +-----+
 	  |SC   |
 	  |1815 |
@@ -17,7 +20,7 @@ GND   ------------------ E
 	 E| C| B|
 	  |  |  |
 	  |  |  |
-6(GND)----+  |  +---[ 10 k OUM ]---16(GPIO23)
+6(GND)----+  |  +------16(GPIO23)
 	     |
        Black |
            (Fan)

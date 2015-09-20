@@ -1,3 +1,5 @@
+[電源断プログラムのraspberry PiのGPIOとスイッチ結線] 
+
 <Header Pin No.>
 6 = GND
 18 = GPIO24(INPUT PIN)
@@ -8,12 +10,14 @@ GND   ------------------ SW 1
 
 
 <Figure>
+スイッチ(SW)
 	  +--+
 	  |SW|
 	  +--+
 	 0| 1|
 	  |  |
 	  |  |
-6(GND)----+  +----18(GPIO23)
+6(GND)----+  +----18(GPIO24)
 
-SW ON:shutdown
+SW ONでshutdownします。
+(リレーなどは電源断でSW ONを選べます)
